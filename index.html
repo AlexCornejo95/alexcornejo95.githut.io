@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guía Web: Primeros pasos con herramientas Fintech</title>
+    <!-- Este script carga todo el diseño (Tailwind CSS). Es necesario para que la página se vea bien. -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Este script carga la fuente de la página (Google Fonts). -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- Estilos personalizados para la página. -->
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+        .section-title {
+            font-size: 2.25rem;
+            font-weight: 700;
+            color: #0d244f;
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        .card {
+            background-color: white;
+            border-radius: 12px;
+            padding: 2rem;
+            box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            height: 100%; /* Asegura que las tarjetas en una fila tengan la misma altura */
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+        }
+        .illustration {
+            width: 100%;
+            max-width: 250px;
+            height: auto;
+            margin: 1rem auto;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+
+    <!-- Header / Barra de Navegación -->
+    <header class="bg-white/80 backdrop-blur-md sticky top-0 z-50 w-full shadow-sm">
+        <nav class="container mx-auto px-6 py-3 flex justify-between items-center">
+            <a href="#" class="font-bold text-xl text-indigo-900">Guía Fintech</a>
+            <div class="hidden md:flex space-x-6">
+                <a href="#finanzas" class="text-gray-600 hover:text-indigo-900">Finanzas</a>
+                <a href="#fintech" class="text-gray-600 hover:text-indigo-900">Fintech</a>
+                <a href="#billeteras" class="text-gray-600 hover:text-indigo-900">Billeteras</a>
+                <a href="#negocio" class="text-gray-600 hover:text-indigo-900">Tu Negocio</a>
+                <a href="#faq" class="text-gray-600 hover:text-indigo-900">Preguntas</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Sección Principal -->
+        <section class="bg-indigo-900 text-white text-center py-20 px-6">
+            <div class="container mx-auto">
+                 <svg class="mx-auto mb-4" xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12h20M12 2a10 10 0 1 1 0 20 10 10 0 0 1 0-20z"/><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20z"/></svg>
+                <h1 class="text-4xl md:text-5xl font-bold leading-tight">Primeros pasos con herramientas Fintech</h1>
+                <p class="mt-4 text-lg text-indigo-200">Una guía clara y útil para potenciar tus finanzas en la vida diaria.</p>
+            </div>
+        </section>
+
+        <!-- Sección de Finanzas Personales -->
+        <section id="finanzas" class="py-20 px-6">
+            <div class="container mx-auto">
+                <h2 class="section-title">La Base de Todo: Tus Finanzas Personales</h2>
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div class="text-center md:text-left">
+                        <div class="card">
+                            <h3 class="text-2xl font-bold text-gray-800 mb-4">La importancia de un presupuesto</h3>
+                            <p class="text-gray-600 mb-4 italic">"Un presupuesto es decirle a tu dinero a dónde debe ir, en lugar de preguntarte a dónde se fue."</p>
+                            <p class="text-gray-600 mb-6">Te ayuda a entender tus ingresos y gastos, tomar control de tu dinero y planificar para alcanzar tus metas.</p>
+                            <h3 class="text-2xl font-bold text-gray-800 mb-4">¿Por qué ahorrar?</h3>
+                            <p class="text-gray-600">Ahorrar es el primer paso hacia tu independencia financiera. Crea un colchón para emergencias y te permite invertir en tu futuro.</p>
+                        </div>
+                    </div>
+                    <div class="illustration">
+                        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><path d="M70,30 H30 C20,30 20,45 30,45 H70 C80,45 80,30 70,30z" fill="#fef3c7"/><path d="M65,30 V20" stroke="#f59e0b" stroke-width="3"/><path d="M50,37.5m-5,0 a5,5 0 1,0 10,0 a5,5 0 1,0 -10,0" fill="#f59e0b"/><path d="M80 55 H20 V 85 H 80 V 55 Z M 20 60 H 80" stroke="#9ca3af" stroke-width="2" fill="none"/><rect x="25" y="65" width="10" height="5" fill="#a7f3d0"/><rect x="40" y="65" width="10" height="5" fill="#a7f3d0"/><rect x="55" y="65" width="10" height="5" fill="#a7f3d0"/><rect x="70" y="65" width="10" height="5" fill="#a7f3d0"/></svg>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de Fintech y Billeteras -->
+        <section class="bg-gray-100 py-20 px-6">
+            <div class="container mx-auto grid md:grid-cols-2 gap-8">
+                <!-- Qué es Fintech -->
+                <div id="fintech" class="card">
+                    <h3 class="text-2xl font-bold text-indigo-900 mb-4 text-center">¿Qué es una Fintech?</h3>
+                    <div class="illustration">
+                        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><rect x="30" y="20" width="40" height="60" rx="5" fill="#e0e7ff"/><rect x="32" y="25" width="36" height="50" fill="white"/><path d="M40 60 L60 40" stroke="#4f46e5" stroke-width="3"/><path d="M40 50 L60 50" stroke="#4f46e5" stroke-width="3"/><path d="M40 40 L60 60" stroke="#4f46e5" stroke-width="3"/><circle cx="70" cy="70" r="15" fill="#34d399"/><circle cx="70" cy="70" r="10" fill="white"/><path d="M68 70 L72 70" stroke="#34d399" stroke-width="2"/><path d="M70 68 L70 72" stroke="#34d399" stroke-width="2"/></svg>
+                    </div>
+                    <p class="text-gray-600 text-center mb-4">Es la unión de <strong class="text-indigo-600">FIN</strong>anzas y <strong class="text-emerald-500">TEC</strong>nología para ofrecerte servicios financieros más simples.</p>
+                    <h4 class="font-semibold text-lg text-gray-700 mb-2 mt-4">Servicios que ofrecen:</h4>
+                    <ul class="space-y-2 text-gray-600 list-disc list-inside">
+                        <li>Pagos y Cobros</li>
+                        <li>Ahorro y Crédito</li>
+                        <li>Remesas</li>
+                    </ul>
+                </div>
+
+                <!-- Billeteras Digitales -->
+                <div id="billeteras" class="card">
+                    <h3 class="text-2xl font-bold text-indigo-900 mb-4 text-center">Billeteras Digitales</h3>
+                    <div class="illustration">
+                        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><path d="M60,20 L40,20 C35,20 30,25 30,30 L30,70 C30,75 35,80 40,80 L60,80 C65,80 70,75 70,70 L70,30 C70,25 65,20 60,20z" stroke="#4a5568" stroke-width="2" fill="white"/><path d="M45,25 L55,25" stroke="#4a5568" stroke-width="2" stroke-linecap="round"/><path d="M40,35 L60,35 M40,45 L60,45 M40,55 L60,55 M40,65 L50,65" stroke="#a0aec0" stroke-width="2" fill="none"/><rect x="45" y="50" width="10" height="10" rx="2" fill="#68d391"/></svg>
+                    </div>
+                    <p class="text-gray-600 text-center mb-4">Son apps en tu celular que funcionan como una billetera tradicional, pero para dinero digital.</p>
+                    <h4 class="font-semibold text-lg text-gray-700 mb-2 mt-4">¿Para qué sirven?</h4>
+                    <ul class="space-y-2 text-gray-600 list-disc list-inside">
+                        <li>Guardar, enviar y recibir dinero al instante.</li>
+                        <li>Pagar servicios y cobrar ventas sin contacto.</li>
+                    </ul>
+                    <p class="mt-4 text-sm text-gray-500 text-center">Ejemplos en Ecuador: PayPhone, Peigo, Deuna!, etc.</p>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Sección Impulsa tu Negocio -->
+        <section id="negocio" class="py-20 px-6">
+            <div class="container mx-auto">
+                <h2 class="section-title">Impulsa tu Negocio de Artesano o Emprendedor</h2>
+                 <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div class="illustration">
+                        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><path d="M20,80 L20,70 Q25,60 30,70 T40,65 T50,50 T60,55 T70,40 T80,45" stroke="#34d399" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/><path d="M75,40 L80,45 L85,40" stroke="#34d399" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/><circle cx="50" cy="20" r="10" fill="#f59e0b"/><text x="50" y="23" font-size="10" text-anchor="middle" fill="white" font-weight="bold">$</text><path d="M10,85 L90,85" stroke="#9ca3af" stroke-width="2" fill="none"/></svg>
+                    </div>
+                    <div class="card bg-teal-50">
+                        <ul class="space-y-4">
+                            <li class="flex items-start"><strong class="text-teal-700 mr-2 text-xl">✓</strong><span><strong>Acepta pagos al instante:</strong> Olvídate del "no tengo cambio". Cobra con un link de pago, código QR o desde tu celular.</span></li>
+                            <li class="flex items-start"><strong class="text-teal-700 mr-2 text-xl">✓</strong><span><strong>Ahorra tiempo:</strong> Reduce las visitas al banco. Gestiona tus finanzas desde donde estés y cuando quieras.</span></li>
+                             <li class="flex items-start"><strong class="text-teal-700 mr-2 text-xl">✓</strong><span><strong>Llega a más clientes:</strong> Al ofrecer más opciones de pago, facilitas la compra y puedes incrementar tus ventas.</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de Preguntas Frecuentes -->
+        <section id="faq" class="bg-amber-50 py-20 px-6">
+            <div class="container mx-auto max-w-3xl">
+                <h2 class="section-title">¿Tienes Preguntas?</h2>
+                <div class="space-y-6">
+                    <div class="bg-white p-6 rounded-lg shadow-sm">
+                        <h3 class="font-semibold text-lg text-gray-800">¿Es seguro usar Fintech?</h3>
+                        <p class="text-gray-600 mt-2">Sí. Las empresas Fintech reguladas usan altos estándares de seguridad para proteger tu dinero y tus datos.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-sm">
+                        <h3 class="font-semibold text-lg text-gray-800">¿Necesito una cuenta de banco?</h3>
+                        <p class="text-gray-600 mt-2">Para algunas sí, pero muchas billeteras digitales te permiten empezar solo con tu documento de identidad.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-sm">
+                        <h3 class="font-semibold text-lg text-gray-800">¿Tienen costo?</h3>
+                        <p class="text-gray-600 mt-2">Algunos servicios son gratuitos y otros cobran una pequeña comisión por transacción. ¡Siempre revisa los términos!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Pie de Página -->
+    <footer class="bg-indigo-900 text-white py-8 px-6">
+        <div class="container mx-auto text-center">
+            <p class="font-semibold">Elaborado para el taller:</p>
+            <p class="text-indigo-200">"Finanzas Personales y Herramientas Fintech para la Vida Diaria"</p>
+        </div>
+    </footer>
+
+</body>
+</html>
